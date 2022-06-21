@@ -3,6 +3,16 @@
     private char _player = '@';
     private char _empty = '.';
 
+    
+    public void DisplayPlayerOccupiedTile(Map map)
+    {
+        foreach (Tile tile in map.Tiles)
+        {
+            if (tile._entity is Player) Console.WriteLine(tile._description);
+        }
+    }
+    
+    
     public void Render(Map map)
     {
         int rows = map.GetSize();

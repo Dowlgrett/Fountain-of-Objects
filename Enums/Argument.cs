@@ -7,3 +7,10 @@
     Fountain,
 }
 
+public enum ValidCommand
+{
+    Move,
+    Activate,
+    Deactivate,
+}
+

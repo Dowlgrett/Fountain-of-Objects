@@ -1,6 +1,7 @@
 ﻿public abstract class Entity
 {
     public Tile OccupiedTile { get; set; }
+    public Map Map { get; set; }
 
     public Tile GetOccupiedTile()
     {

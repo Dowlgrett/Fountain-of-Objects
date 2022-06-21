@@ -1,14 +1,15 @@
 ﻿public abstract class Tile
 {
-    private readonly int _x;
-    private readonly int _y;
+    public readonly int _x;
+    public readonly int _y;
     public Entity _entity; //how to make it private?
-    protected string _description = String.Empty;
+    public string _description = String.Empty;
 
     public Entity GetEntity()
     {
         return _entity;
     }
+
 
     public Tile(int x, int y)
     {
